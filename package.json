@@ -6,6 +6,7 @@
   "main": "index.js",
   "author": "ZENTHANG <zenthangplus@gmail.com>",
   "license": "MIT",
+  "repository": "https://github.com/zenthangplus/franz-zalo",
   "config": {
     "serviceURL": "https://chat.zalo.me",
     "hasNotificationSound": true
