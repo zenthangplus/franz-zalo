@@ -1,0 +1,13 @@
+{
+  "id": "zalo",
+  "name": "Zalo",
+  "version": "1.0.0",
+  "description": "Zalo",
+  "main": "index.js",
+  "author": "ZENTHANG <zenthangplus@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://chat.zalo.me",
+    "hasNotificationSound": true
+  }
+}
