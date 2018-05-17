@@ -1,10 +1,10 @@
 module.exports = (Franz) => {
     const getMessages = function getMessages() {
+        let count = 0;
         const $imgCounts = document.querySelectorAll('img.tab-red-dot');
         if ($imgCounts.length > 0) {
             const $img = $imgCounts[0];
             const src = $img.getAttribute('src');
-            let count = 0;
             if (src) {
                 const regex = /message_notification_(.+).png$/g;
                 const execResult = regex.exec(src);
@@ -15,9 +15,9 @@ module.exports = (Franz) => {
                     }
                 }
             }
-            // set Franz badge
-            Franz.setBadge(parseInt(count));
         }
+        // set Franz badge
+        Franz.setBadge(parseInt(count));
     };
 
     Franz.loop(getMessages);
